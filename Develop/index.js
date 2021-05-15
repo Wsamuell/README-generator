@@ -1,15 +1,15 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateMarkdown = require('./utils/generateMarkdown')
+const generateMarkdown = require('../Develop/utils/generateMarkdown');
 
-const writeToFile = (fileName, data) => {
-    fs()
-}
+// const writeToFile = (fileName, data) => {
+//     fs()
+// }
 
 
 // TODO: Create an array of questions for user input
-inquirer.prompt(
+inquirer.prompt ([
     {
         type: "input",
         name: "github",
@@ -72,14 +72,12 @@ inquirer.prompt(
         name: "license",
         message: "Provide license information & documentation",
         choices: [
-            "MIT License",
-            "Unlicensed",
-            "Mozilla Public License",
-            "GNU AGPLv3",
-            "GNU GPLv3",
-            "GNU LGPLv3",
-            "Apache License 2.0",
-            "Boost software License"
+            "MIT",
+            "Mozilla_Public",
+            "GNU_AGPLv3",
+            "GNU_GPLv3",
+            "GNU_LGPLv3",
+            "Apache_2.0",
 
         ]
     },
@@ -94,9 +92,7 @@ inquirer.prompt(
             'Node'
         ]
     },
-
-
-)
+])
     .then(({
         github,
         email,
@@ -108,43 +104,48 @@ inquirer.prompt(
         license,
         programs,
     }) => {
-        const template = `# ${title}
-    
-    ## Repository link
-    ${repository}
+        const readMeTemplate = `
+# ${title}
 
-    ### Description
-    ${description}
-    ### Purpose and Usage
-    ${usage}
-    ### Programs Used
-    ${programs}
+## Repository link
+${repository}
 
-    ### Installation Required
-    ${installation}
-    ### License
-    ${license}
+### Description
+${description}
+### Purpose and Usage
+${usage}
+### Programs Used
+${programs}
 
-    ### Contact Information
-    ### Github: https://github.com/users/${github}
-    #### Email: ${email}
+### Installation Required
+${installation}
+### License
+![${license}](https://img.shields.io/badge/license-${license}-blue)
+
+
+### Contact Information
+### Github: https://github.com/${github}
+#### Email: ${email}
     `;
-        writeToFile(title, template);
+        // createReadMe(title, template);
+        writeToFile("README.md", readMeTemplate)
     });
 
 // TODO: Create a function to write README file
+// function createReadMe(fileName, data)
 
+// creating the file using fs
 function writeToFile(fileName, data) {
-    fs.writeFile("fileName.md", data, (err) =>{
-        if (err) {
-            console.log(err)
-        };
-        console.log ('The file has been generated and saved');
+    fs.writeFile(fileName, data, (err) => {
+        if (err) throw err;
+        //     console.log(err)
+        // }
+        console.log('The file has been generated and saved');
     })
 }
 
 // TODO: Create a function to initialize app
-function init() { }
+// function init() { }
 
 // Function call to initialize app
-init();
+// init();

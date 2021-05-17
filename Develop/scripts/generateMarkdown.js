@@ -4,7 +4,7 @@ const readMeTemplate = data => {
 const {name, github, email, repository, title, description, installation, usage, license, programs} = data
 return `
 # ${title}
------------
+------------------
 
 ## Repository link
 -------------------

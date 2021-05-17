@@ -1,8 +1,8 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const readMeTemplate = require('../Develop/utils/generateMarkdown');
-const readmeQuestions = require('./utils/questions')
+const readMeTemplate = require('./scripts/generateMarkdown');
+const readmeQuestions = require('./scripts/questions')
 
 
 // creating the file using fs
@@ -28,3 +28,5 @@ function init() {inquirer.prompt(readmeQuestions)
 
 // Function call to initialize app
 init();
+
+

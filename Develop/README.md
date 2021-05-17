@@ -1,23 +1,31 @@
 
-# README-generator
+# Professional README Generator
+-----------
 
 ## Repository link
+-------------------
 https://github.com/Wsamuell/README-generator
 
 ### Description
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+-------------------
+This app makes it easy and quick generate a README file by using a command-line application, gives you more time to actually write more code and focus on the important stuff.
 ### Purpose and Usage
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+---------------------
+before any project is started its good to know where you stand and how you want to take the project head-on. with the README generator, it cuts the time of creating one and just jumping straight to the project.
 ### Programs Used
+-----------------
 JavaScript,Node
 
 ### Installation Required
-
+------------------------
+After this project has been cloned from the github page, you would need to make sure node package manager  is installed on the project. using npm y and the  npm i will get all needed packages installed into the project.
 ### License
+------------
 ![MIT](https://img.shields.io/badge/license-MIT-blue)
 
 
 ### Contact Information
-### Github: [samuel odubamowo](https://github.com/wsamuell)
-#### Email: wemsamuel@gmail.com
+------------------------
+### Github: [Samuel Odubamowo](https://github.com/Wsamuell)
+#### Email: Wemsamuel@gmail.com
     

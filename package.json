@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "file-system": "^2.2.2",
+    "fs": "*",
+    "inquirer": "^8.0.0",
+    "markdown": "^0.5.0"
+  }
+}

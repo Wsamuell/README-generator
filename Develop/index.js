@@ -2,7 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const readMeTemplate = require('../Develop/utils/generateMarkdown');
-const readmeQuestions = require('./questions')
+const readmeQuestions = require('./utils/questions')
 
 
 // creating the file using fs

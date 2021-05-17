@@ -1,4 +1,4 @@
-const generateMarkdown = require("./utils/generateMarkdown");
+const generateMarkdown = require("./generateMarkdown");
 
 const readmeQuestions = [
     {
